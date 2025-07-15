@@ -1,0 +1,26 @@
+[
+  {
+    "parts": [
+      {
+        "type": "text",
+        "text": "hey"
+      }
+    ],
+    "id": "msgc-F1XWwLGOzhMlLR1o",
+    "role": "user"
+  },
+  {
+    "id": "aitxt-Mra3reKFeNccbPVIhL3laUYL",
+    "role": "assistant",
+    "parts": [
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "text",
+        "text": "Hey there! How can I help you today?",
+        "state": "done"
+      }
+    ]
+  }
+]

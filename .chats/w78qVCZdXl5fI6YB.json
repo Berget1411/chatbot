@@ -1,0 +1,74 @@
+[
+  {
+    "parts": [
+      {
+        "type": "text",
+        "text": "hey"
+      }
+    ],
+    "id": "msgc-ePGaecpWpfZCNhp8",
+    "role": "user"
+  },
+  {
+    "id": "aitxt-2szN4kfScesqm2roQcK2i6Op",
+    "role": "assistant",
+    "parts": [
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "text",
+        "text": "Hey! How can I assist you today?",
+        "state": "done"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "type": "text",
+        "text": "continue"
+      }
+    ],
+    "id": "msgc-f3T7RWM8D9e0v3cO",
+    "role": "user"
+  },
+  {
+    "id": "aitxt-q7MLq9FRe5QpDW1yRUiw5d7x",
+    "role": "assistant",
+    "parts": [
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "text",
+        "text": "Sure! What would you like to continue discussing?",
+        "state": "done"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "type": "text",
+        "text": "a poem 200 words please"
+      }
+    ],
+    "id": "msgc-ubmul4VmIyvAI1zs",
+    "role": "user"
+  },
+  {
+    "id": "aitxt-IgGJ7QPRY3i6yillch16T8OO",
+    "role": "assistant",
+    "parts": [
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "text",
+        "text": "**Whispers of the Night**\n\nIn twilight's glow where shadows dance,  \nThe world unfolds in a whispered trance.  \nStars emerge like secrets spun,  \nBeneath the watchful eye of the moon.  \n\nLeaves rustle softly, a tender sigh,  \nAs nightingale songs weave through the sky.  \nGentle breezes carry the past,  \nWhile dreams, like fireflies, flicker and cast.  \n\nIn the garden where memories bloom,  \nEchoes of laughter dispel the gloom.  \nEach petal tells tales of love once shared,  \nOf hearts entwined and souls laid bare.  \n\nThe cool earth cradles the weight of time,  \nWhile silence hums its sacred rhyme.  \nA symphony played in soft, hushed tones,  \nWhispers of all that our hearts have known.  \n\nTime lingers here, in this sacred space,  \nWhere every shadow finds its place.  \nAs night deepens, so do our fears,  \nYet hope ignites through the veil of tears.  \n\nSo let us walk beneath the stars,  \nLeave behind our silent scars.  \nFor in the darkness, light will spark,  \nA promise born in the hidden dark.  \n\nWith every breath, we find our way,  \nEmbracing the night, welcoming the day.  \nIn the quiet, life unfolds anew,  \nIn whispers of the night, I find you.",
+        "state": "done"
+      }
+    ]
+  }
+]

@@ -3,7 +3,7 @@
 import { UIMessage, useChat } from "@ai-sdk/react";
 import { createIdGenerator } from "ai";
 import { DefaultChatTransport } from "ai";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export function Chat({
   id,
@@ -13,6 +13,9 @@ export function Chat({
   initialMessages?: UIMessage[];
 }) {
   const [input, setInput] = useState("");
+  const [files, setFiles] = useState<FileList | undefined>(undefined);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
   const { sendMessage, messages } = useChat({
     id, // use the provided chat ID
     messages: initialMessages, // load initial messages
@@ -32,8 +35,12 @@ export function Chat({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (input.trim()) {
-      sendMessage({ text: input });
+      sendMessage({ text: input, files });
       setInput("");
+      setFiles(undefined);
+      if (fileInputRef.current) {
+        fileInputRef.current.value = ""; // reset the file input
+      }
     }
   };
 
@@ -54,6 +61,16 @@ export function Chat({
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder='Type a message...'
+        />
+        <input
+          type='file'
+          onChange={(event) => {
+            if (event.target.files) {
+              setFiles(event.target.files);
+            }
+          }}
+          multiple
+          ref={fileInputRef}
         />
         <button type='submit'>Send</button>
       </form>

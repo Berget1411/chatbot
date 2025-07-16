@@ -1,14 +1,15 @@
 version: "3.8"
-
 services:
-  redis:
-    image: redis:7.2-alpine # or latest
-    container_name: local-redis
+  postgres:
+    image: postgres:15
+    container_name: chatbot_postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: chatbot_db
     ports:
-      - "6379:6379"
+      - "5433:5432"
     volumes:
-      - redis-data:/data
-    restart: unless-stopped
-
+      - postgres_data:/var/lib/postgresql/data
 volumes:
-  redis-data:
+  postgres_data:
